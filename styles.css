@@ -68,3 +68,39 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+
+/* Glassmorphism Dialog */
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-content {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    width: 300px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border for glassmorphism */
+    text-align: center;
+}
+
+.button {
+    background-color: #1DF58A;
+    border: none;
+    padding: 10px 20px;
+    color: #0D1A23;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+}
