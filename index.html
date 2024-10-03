@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,20 +23,38 @@
         </div>
         <p class="section-title">Home</p>
         <div class="video-container">
-    <img src="images/erm.jpg" alt="Video Thumbnail" class="thumbnail">
-    <p class="video-title">Bubble de House - Two busty …</p>
-    <p class="video-info">30:58 • Hah • 3 Sum</p>
-</div>
-<div class="video-container">
-    <img src="images/uhm.jpg" alt="Video Thumbnail" class="thumbnail">
-    <p class="video-title">Terminal Hospital 2 - Busty nurse…</p>
-    <p class="video-info">26:05 • Hah</p>
-</div>
-<div class="video-container">
-    <img src="images/idk.jpg" alt="Video Thumbnail" class="thumbnail">
-    <p class="video-title">Mom's Friend Caught Me…</p>
-    <p class="video-info">27:42 • Hah • Mimi</p>
-</div>
+            <img src="images/erm.jpg" alt="Video Thumbnail" class="thumbnail">
+            <p class="video-title">Bubble de House - Two busty …</p>
+            <p class="video-info">30:58 • Hah • 3 Sum</p>
+        </div>
+        <div class="video-container">
+            <img src="images/uhm.jpg" alt="Video Thumbnail" class="thumbnail">
+            <p class="video-title">Terminal Hospital 2 - Busty nurse…</p>
+            <p class="video-info">26:05 • Hah</p>
+        </div>
+        <div class="video-container">
+            <img src="images/idk.jpg" alt="Video Thumbnail" class="thumbnail">
+            <p class="video-title">Mom's Friend Caught Me…</p>
+            <p class="video-info">27:42 • Hah • Mimi</p>
+        </div>
     </div>
+
+    <!-- 18 or what -->
+    <div id="age-dialog" class="dialog">
+        <div class="dialog-content">
+            <p>Are you 18 years old?</p>
+            <button id="yes-button" class="button">Yes</button>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('age-dialog').style.display = 'flex';
+        };
+
+        document.getElementById('yes-button').addEventListener('click', function() {
+            document.getElementById('age-dialog').style.display = 'none';
+        });
+    </script>
 </body>
 </html>
